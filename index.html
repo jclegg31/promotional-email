@@ -1,98 +1,43 @@
 <!DOCTYPE html>
-<html
-  lang="en"
-  dir="ltr"
-  xmlns:v="urn:schemas-microsoft-com:vml"
-  xmlns:o="urn:schemas-microsoft-com:office:office"
->
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=yes"
-    />
-    <meta
-      name="format-detection"
-      content="telephone=no, date=no, address=no, email=no, url=no"
-    />
-    <meta name="x-apple-disable-message-reformatting" />
-    <meta name="color-scheme" content="light dark" />
-    <meta name="supported-color-schemes" content="light dark" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IHG Hotels</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>Email title</title>
-    <!--[if mso]>
-      <noscript>
-        <xml>
-          <o:OfficeDocumentSettings>
-            <o:PixelsPerInch>96</o:PixelsPerInch>
-          </o:OfficeDocumentSettings>
-        </xml>
-      </noscript>
-    <![endif]-->
+
     <style>
-      :root {
-        color-scheme: light dark;
-        /* supported-color-schemes: light dark; */
-      }
       body {
         margin: 0;
         padding: 0;
       }
 
-      /* desktop */
-      @media only screen and (min-width: 960px) {
-        .container {
-          width: 960px;
-        }
-
-        .image-header {
-          padding: 30px 50px 30px !important;
-        }
-      }
-
-      /* tablets */
-      @media only screen and (max-width: 960px) {
-        .container {
-          width: 600px;
-        }
-
-        .image-header {
-          padding: 15px !important;
-        }
-      }
-
       /* mobile */
-      @media only screen and (max-width: 600px) {
-        .container {
+      @media screen and (max-width: 600px) {
+        .main-container {
           width: 100% !important;
-          max-width: 100% !important;
         }
 
         .image-header {
+          display: block !important;
+          width: 100% !important;
+        }
+
+        .image-header img {
           width: 100% !important;
           height: auto !important;
+        }
+
+        .explore-text {
+          margin: 0 10px !important;
         }
       }
     </style>
   </head>
-  <body class="body" xml:lang="en" style="background-color: #f4f4f4">
-    <!-- <div
-      role="article"
-      aria-roledescription="email"
-      aria-label="email name"
-      lang="en"
-      dir="ltr"
-      style="
-        background-color: #f4f4f4;
-        font-size: medium;
-        font-size: max(16px, 1rem);
-        font-family: Arial, helvetica, sans-serif;
-      "
-    > -->
+  <body class="body" style="background-color: #f4f4f4">
     <!-- email content in here -->
 
     <!-- start of html email -->
@@ -101,7 +46,7 @@
         <td align="center" style="padding-top: 25px">
           <!-- start of main container -->
           <table
-            class="container"
+            class="main-container"
             width="600"
             align="center"
             cellspacing="0"
@@ -114,7 +59,6 @@
                 <!-- start try here just remove table tr td if don't like it-->
                 <table
                   class="image-header"
-                  width="100%"
                   align="center"
                   cellspacing="0"
                   cellpadding="0"
@@ -127,7 +71,6 @@
                         alt="IHG Logo"
                         width="600"
                         height="auto"
-                        style="display: inline-block"
                       />
                     </td>
                   </tr>
@@ -251,6 +194,7 @@
                   Explore the world with your Premier points
                 </h2>
                 <p
+                  class="explore-text"
                   style="
                     font-weight: 500;
                     line-height: 22px;
@@ -311,6 +255,7 @@
                 </p>
 
                 <p
+                  class="explore-text"
                   style="
                     font-size: 12px;
                     line-height: 18px;
